@@ -1,8 +1,3 @@
-gogoring
-
-설명:
-랜덤 로또 코드를 만듭니다.
-
 import java.util.*;
 
 public class Lotto {
