@@ -1,1 +1,18 @@
 gogoring
+
+설명:
+랜덤 로또 코드를 만듭니다.
+
+import java.util.*;
+
+public class Lotto {
+    public static void main(String[] args) {
+        Set<Integer> lotto = new TreeSet<>();
+        Random rand = new Random();
+
+        while (lotto.size() < 6) {
+            lotto.add(rand.nextInt(45) + 1); // 1~45
+        }
+
+        System.out.println("로또 번호: " + lotto);
+    }
